@@ -1,0 +1,47 @@
+.atom-text-input {
+  all: unset;
+  display: block;
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+  padding: 4px;
+  border-bottom: var(--border-width) solid;
+  border-color: var(--color-secondary);
+  transition: border-color 0.3s ease;
+}
+
+.atom-text-input.atom-text-input-disabled {
+  border-color: var(--color-disabled);
+  color: var(--color-font-disabled);
+  cursor: not-allowed;
+}
+
+.atom-text-input.atom-text-input-inverse {
+  color: var(--color-font-inverse);
+  border-color: var(--color-inverse);
+}
+
+.atom-text-input:hover {
+  border-color: var(--color-secondary-hover);
+}
+
+.atom-text-input.atom-text-input-disabled:hover {
+  border-color: var(--color-disabled);
+}
+
+.atom-text-input.atom-text-input-inverse:hover {
+  border-color: var(--color-primary);
+}
+
+.atom-text-input:focus {
+  border-color: var(--color-highlight);
+}
+
+.atom-text-input::placeholder {
+  color: var(--color-font-secondary);
+}
+
+.atom-text-input.atom-text-input-inverse::placeholder {
+  color: var(--color-font-inverse);
+}

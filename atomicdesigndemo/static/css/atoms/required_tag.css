@@ -1,0 +1,8 @@
+.atom-required-tag {
+  color: var(--color-danger);
+  font-size: var(--font-size-normal);
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-normal);
+  user-select: none;
+  display: inline-block;
+}

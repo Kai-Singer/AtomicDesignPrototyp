@@ -1,0 +1,10 @@
+.molecule-upload-input-with-label {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-list);
+}
+
+.molecule-upload-input-with-label-label {
+  user-select: none;
+  margin-right: var(--spacing-list);
+} 

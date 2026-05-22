@@ -1,0 +1,7 @@
+{% load molecules %}
+
+<div class="organism-item-card-list">
+  {% for item in items %}
+    {% moleculeItemCard name=item.name tags=item.tags url=item.url img=item.img %}
+  {% endfor %}
+</div>

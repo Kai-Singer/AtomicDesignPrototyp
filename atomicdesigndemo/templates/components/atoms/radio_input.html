@@ -1,0 +1,13 @@
+<label class="atom-radio-input-container" for="{{ id }}">
+  <input
+    class="atom-radio-input" 
+    type="radio"
+    name="{{ name }}"
+    id="{{ id }}"
+    value="{{ value }}"
+    {% if required %}required{% endif %}
+    {% if checked %}checked{% endif %}
+  />
+  <span class="atom-radio-input-circle"></span>
+  {{ label }}
+</label>

@@ -1,0 +1,17 @@
+{% load atoms %}
+
+{% if label %}
+  <div class="molecule-radio-input-list-label">
+    {% atomLabel label=label %}
+  </div>
+{% endif %}
+<div class="molecule-radio-input-list-container">
+  <div class="molecule-radio-input-list">
+    {% for option in options %}
+      {% atomRadioInput name=name label=option.label value=option.value required=required checked=option.checked id=option.id %}
+    {% endfor %}
+  </div>
+  {% if required %}
+    {% atomRequiredTag %}
+  {% endif %}
+</div>

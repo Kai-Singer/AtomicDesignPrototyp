@@ -1,0 +1,37 @@
+.atom-textarea-input {
+  all: unset;
+  display: block;
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+  padding: 4px;
+  border-bottom: var(--border-width) solid;
+  border-color: var(--color-secondary);
+  transition: border-color 0.3s ease;
+  resize: both;
+  height: 100px;
+  width: 300px;
+}
+
+.atom-textarea-input.atom-textarea-input-disabled {
+  border-color: var(--color-disabled);
+  color: var(--color-font-disabled);
+  cursor: not-allowed;
+}
+
+.atom-textarea-input:hover {
+  border-color: var(--color-secondary-hover);
+}
+
+.atom-textarea-input.atom-textarea-input-disabled:hover {
+  border-color: var(--color-disabled);
+}
+
+.atom-textarea-input:focus {
+  border-color: var(--color-highlight);
+}
+
+.atom-textarea-input::placeholder {
+  color: var(--color-font-secondary);
+}

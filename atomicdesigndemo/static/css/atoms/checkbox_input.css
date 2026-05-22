@@ -1,0 +1,59 @@
+.atom-checkbox-input-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+  user-select: none;
+}
+
+.atom-checkbox-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.atom-checkbox-input-box {
+  width: 20px;
+  height: 20px;
+  border: var(--border-width) solid;
+  border-color: var(--color-secondary);
+  border-radius: var(--border-radius-inner);
+  display: inline-block;
+  position: relative;
+  transition: border-color 0.3s ease;
+  background-color: var(--color-inverse);
+}
+
+.atom-checkbox-input-box::after {
+  content: "";
+  width: 6px;
+  height: 12px;
+  background: var(--color-primary);
+  border: solid;
+  border-width: 0 2px 2px 0;
+  border-color: var(--color-inverse);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg) scale(0);
+}
+
+.atom-checkbox-input:checked + .atom-checkbox-input-box {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+.atom-checkbox-input:checked + .atom-checkbox-input-box::after {
+  transform: translate(-50%, -50%) rotate(45deg) scale(1);
+}
+
+.atom-checkbox-input-container:hover .atom-checkbox-input-box {
+  border-color: var(--color-primary);
+}
+
+.atom-checkbox-input:focus-visible + .atom-checkbox-input-box {
+  border-color: var(--color-highlight);
+}

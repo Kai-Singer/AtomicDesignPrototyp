@@ -1,0 +1,5 @@
+.molecule-search-bar {
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}

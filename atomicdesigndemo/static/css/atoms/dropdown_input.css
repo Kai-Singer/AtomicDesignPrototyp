@@ -1,0 +1,49 @@
+.atom-dropdown-input {
+  all: unset;
+  display: block;
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+  padding: 4px 24px 4px 4px;
+  border-bottom: var(--border-width) solid;
+  border-color: var(--color-secondary);
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.atom-dropdown-input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.atom-dropdown-input-container::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: 35%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid var(--color-font);
+  border-bottom: 2px solid var(--color-font);
+  pointer-events: none;
+}
+
+.atom-dropdown-input.atom-dropdown-input-disabled {
+  border-color: var(--color-disabled);
+  color: var(--color-font-disabled);
+  cursor: not-allowed;
+}
+
+.atom-dropdown-input:hover {
+  border-color: var(--color-secondary-hover);
+}
+
+.atom-dropdown-input.atom-dropdown-input-disabled:hover {
+  border-color: var(--color-disabled);
+}
+
+.atom-dropdown-input:focus {
+  border-color: var(--color-highlight);
+}

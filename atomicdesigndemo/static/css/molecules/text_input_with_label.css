@@ -1,0 +1,10 @@
+.molecule-text-input-with-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: fit-content;
+}
+
+.molecule-text-input-with-label-label {
+  user-select: none;
+}

@@ -1,0 +1,22 @@
+{% extends "templates/base.html" %}
+{% load atoms organisms %}
+
+
+{% block page_title %}
+
+<title>Hilfe</title>
+
+{% endblock %}
+
+
+{% block content %}
+
+{% atomHeading text="Hilfe" %}
+
+{% atomSubheading text="Eine Seite als Hilfe" %}
+
+{% atomParagraph text="Auf dieser Seite kann ein Text stehen, um Hilfe anzubieten. Hier steht noch nichts..." %}
+
+{% atomLink text="Mehr Informationen" url="/help" newpage=True %}
+
+{% endblock %}

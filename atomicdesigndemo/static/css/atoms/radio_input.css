@@ -1,0 +1,55 @@
+.atom-radio-input-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+  user-select: none;
+}
+
+.atom-radio-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.atom-radio-input-circle {
+  width: 20px;
+  height: 20px;
+  border: var(--border-width) solid;
+  border-color: var(--color-secondary);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  transition: border-color 0.3s ease;
+}
+
+.atom-radio-input-circle::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.atom-radio-input:checked + .atom-radio-input-circle {
+  border-color: var(--color-primary);
+}
+
+.atom-radio-input:checked + .atom-radio-input-circle::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.atom-radio-input-container:hover .atom-radio-input-circle {
+  border-color: var(--color-primary);
+}
+
+.atom-radio-input:focus-visible + .atom-radio-input-circle {
+  border-color: var(--color-highlight);
+}

@@ -1,0 +1,34 @@
+.molecule-item-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-outer);
+  background-color: var(--color-card-primary);
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.molecule-item-card:hover {
+  transform: scale(1.05);
+}
+
+.molecule-item-card-content {
+  padding: var(--spacing-card);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.molecule-item-card-container {
+  all: unset;
+}
+
+.molecule-item-card-tag-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 6px;
+  overflow: hidden;
+}

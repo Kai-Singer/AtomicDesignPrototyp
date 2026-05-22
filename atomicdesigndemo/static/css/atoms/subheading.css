@@ -1,0 +1,7 @@
+.atom-subheading {
+  all: unset;
+  font-size: var(--font-size-subheading);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-font-secondary);
+  font-family: var(--font-family-default);
+}

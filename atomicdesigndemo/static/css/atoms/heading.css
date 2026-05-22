@@ -1,0 +1,15 @@
+.atom-heading {
+  all: unset;
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-font-primary);
+  font-family: var(--font-family-default);
+  margin-left: 16px;
+}
+
+.atom-heading-line {
+  border: none;
+  height: 4px;
+  background-color: var(--color-secondary);
+  margin-bottom: var(--spacing-heading);
+}

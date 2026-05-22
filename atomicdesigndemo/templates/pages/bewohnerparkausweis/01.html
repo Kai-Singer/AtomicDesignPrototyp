@@ -1,0 +1,18 @@
+{% extends "templates/form.html" %}
+{% load organisms %}
+
+
+{% block page_title %}
+
+<title>Antrag - Bewohnerparkausweis beantragen</title>
+
+{% endblock %}
+
+
+{% block content %}
+
+{% organismFormHeading text="Antrag - Bewohnerparkausweis beantragen" application_id=application_id %}
+
+{% organismNameForm name="01" application_id=application_id heading="Angaben zu Ihrer Person" description="Bitte geben Sie Ihren Namen an!" %}
+
+{% endblock %}

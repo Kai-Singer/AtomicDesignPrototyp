@@ -1,0 +1,12 @@
+.organism-navigation {
+  background-color: var(--color-card-primary);
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+.organism-navigation-items {
+  padding: 18px;
+  display: flex;
+  gap: 10px;
+}

@@ -1,0 +1,25 @@
+{% load atoms molecules %}
+
+<div>
+  <div class="organism-form-header">
+    {% atomSubheading text=heading %}
+    {% if description %}
+      {% atomParagraph text=description %}
+    {% endif %}
+  </div>
+  <form method="post" class="organism-form">
+    {% csrf_token %}
+    <input type="hidden" name="form_id" value="{{ name }}">
+    <input type="hidden" name="application_id" value="{{ application_id }}">
+    <div class="organism-form-group">
+      {% moleculeCheckboxInputList name="eak_einsatzgebiet" options=einsatzgebiet_options label="Einsatzgebiet" %}
+    </div>
+    <div class="organism-form-group">
+      {% moleculeTextareaInputWithLabel name="eak_informationen" label="Ergänzende Informationen" placeholder="Bitte angeben..." %}
+    </div>
+    <div class="organism-form-group">
+      {% atomButton text="Felder leeren" type="reset" variant="secondary" %}
+      {% atomButton text="Weiter" type="submit" %}
+    </div>
+  </form>
+</div>

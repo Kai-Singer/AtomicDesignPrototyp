@@ -1,0 +1,30 @@
+{% load atoms molecules %}
+
+<div>
+  <div class="organism-form-header">
+    {% atomSubheading text=heading %}
+    {% if description %}
+      {% atomParagraph text=description %}
+    {% endif %}
+  </div>
+  <form method="post" class="organism-form">
+    {% csrf_token %}
+    <input type="hidden" name="form_id" value="{{ name }}">
+    <input type="hidden" name="application_id" value="{{ application_id }}">
+    <div class="organism-form-group">
+      {% moleculeDropdownInputWithLabel name="form_of_address" label="Anrede" placeholder="Bitte angeben" options=form_of_address_options required=True %}
+      {% moleculeTextInputWithLabel name="title" label="Akademischer Titel" %}
+    </div>
+    <div class="organism-form-group">
+      {% moleculeTextInputWithLabel name="first_name" label="Vorname" required=True %}
+      {% moleculeTextInputWithLabel name="last_name" label="Nachname" required=True %}
+    </div>
+    <div class="organism-form-group">
+      {% moleculeTextInputWithLabel name="birth_date" label="Geburtsdatum" type="date" required=True %}
+    </div>
+    <div class="organism-form-group">
+      {% atomButton text="Felder leeren" type="reset" variant="secondary" %}
+      {% atomButton text="Weiter" type="submit" %}
+    </div>
+  </form>
+</div>

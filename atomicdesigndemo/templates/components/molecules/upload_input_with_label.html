@@ -1,0 +1,11 @@
+{% load atoms %}
+
+<div class="molecule-upload-input-with-label">
+  <div class="molecule-upload-input-with-label-label">
+    {% atomLabel label=label id=id%}
+    {% if required %}
+      {% atomRequiredTag %}
+    {% endif %}
+  </div>
+  {% atomUploadInput name=name multiple=multiple required=required disabled=disabled id=id %}
+</div>

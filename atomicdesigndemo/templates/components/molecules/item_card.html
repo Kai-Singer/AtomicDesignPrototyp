@@ -1,0 +1,17 @@
+{% load atoms %}
+
+<a href="{{ url }}" class="molecule-item-card-container">
+  <div class="molecule-item-card">
+    {% if img %}
+      {% atomCardImg name=name url=img %}
+    {% endif %}
+    <div class="molecule-item-card-content">
+      <div class="molecule-item-card-tag-container">
+        {% for tag in tags %}
+          {% atomCardTag text=tag.text color=tag.color %}
+        {% endfor %}
+      </div>
+      {% atomCardTitle text=name inverse=True %}
+    </div>
+  </div>
+</a>

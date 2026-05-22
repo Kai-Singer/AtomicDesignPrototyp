@@ -1,0 +1,17 @@
+{% load atoms %}
+
+{% if label %}
+  <div class="molecule-checkbox-input-list-label">
+    {% atomLabel label=label %}
+  </div>
+{% endif %}
+<div class="molecule-checkbox-input-list">
+  {% for option in options %}
+    <div class="molecule-checkbox-input-list-item">
+      {% atomCheckboxInput name=name label=option.label value=option.value required=option.required checked=option.checked id=option.id %}
+      {% if option.required %}
+        {% atomRequiredTag %}
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

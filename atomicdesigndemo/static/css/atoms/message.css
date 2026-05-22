@@ -1,0 +1,41 @@
+.atom-message {
+  user-select: none;
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-normal);
+  padding: var(--spacing-card);
+  border-radius: var(--border-radius-normal);
+  border: var(--border-width) solid;
+  color: var(--color-font-inverse);
+  z-index: 10px;
+  transform: translateY(0);
+  opacity: 1;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.atom-message-hidden {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.atom-message-info {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.atom-message-success {
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+.atom-message-warning {
+  background-color: var(--color-warning);
+  border-color: var(--color-warning);
+}
+
+.atom-message-error {
+  background-color: var(--color-danger);
+  border-color: var(--color-danger);
+}

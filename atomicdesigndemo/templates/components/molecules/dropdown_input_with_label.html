@@ -1,0 +1,11 @@
+{% load atoms %}
+
+<div class="molecule-dropdown-input-with-label">
+  {% atomDropdownInput name=name placeholder=placeholder required=required disabled=disabled options=options id=id %}
+  <div class="molecule-dropdown-input-with-label-label">
+    {% atomLabel label=label id=id%}
+    {% if required %}
+      {% atomRequiredTag %}
+    {% endif %}
+  </div>
+</div>

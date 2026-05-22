@@ -1,0 +1,13 @@
+{% load atoms molecules %}
+
+<div class="organism-navigation">
+  {% atomNavigationLogo %}
+  <div class="organism-navigation-items">
+    {% for item in items %}
+      {% atomNavigationItem name=item.name url=item.url %}
+    {% endfor %}
+  </div>
+  <div class="organism-navigation-search-bar">
+    {% moleculeSearchBar %}
+  </div>
+</div>

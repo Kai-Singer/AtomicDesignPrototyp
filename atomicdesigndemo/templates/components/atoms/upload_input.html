@@ -1,0 +1,10 @@
+<input
+  name="{{ name }}"
+  id="{{ id }}"
+  class="atom-upload-input
+    {% if disabled %}atom-upload-input-disabled{% endif %}"
+  {% if required %}required{% endif %}
+  {% if disabled %}disabled{% endif %}
+  {% if multiple %}multiple{% endif %}
+  type="file"
+/>

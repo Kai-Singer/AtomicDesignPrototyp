@@ -1,0 +1,10 @@
+.organism-message-container {
+  position: fixed;
+  top: var(--spacing-list-large);
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-list-large);
+}

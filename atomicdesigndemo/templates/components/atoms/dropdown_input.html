@@ -1,0 +1,21 @@
+<div class="atom-dropdown-input-container">
+  <select
+    id="{{ id }}"
+    name="{{ name }}"
+    class="atom-dropdown-input
+      {% if disabled %}atom-dropdown-input-disabled{% endif %}"
+    {% if required %}required{% endif %}
+    {% if disabled %}disabled{% endif %}>
+    {% if placeholder %}
+      <option value="" disabled selected>{{ placeholder }}</option>
+    {% endif %}
+    {% for option in options %}
+      <option
+        value="{{ option.value }}"
+        {% if option.disabled %}disabled{% endif %}
+        {% if option.selected %}selected{% endif %}>
+        {{ option.label }}
+      </option>
+    {% endfor %}
+  </select>
+</div>

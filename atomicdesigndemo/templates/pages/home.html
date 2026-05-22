@@ -1,0 +1,18 @@
+{% extends "templates/base.html" %}
+{% load atoms organisms %}
+
+
+{% block page_title %}
+
+<title>Online Anträge</title>
+
+{% endblock %}
+
+
+{% block content %}
+
+{% atomHeading text="Onlineanträge" %}
+
+{% organismItemCardList items=services_list %}
+
+{% endblock %}

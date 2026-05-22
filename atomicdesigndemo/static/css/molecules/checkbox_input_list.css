@@ -1,0 +1,15 @@
+.molecule-checkbox-input-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-list);
+}
+
+.molecule-checkbox-input-list-item {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.molecule-checkbox-input-list-label {
+  margin-right: var(--spacing-list);
+}

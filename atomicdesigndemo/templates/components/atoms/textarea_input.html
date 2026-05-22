@@ -1,0 +1,10 @@
+<textarea
+  name="{{ name }}"
+  id="{{ id }}"
+  placeholder="{{ placeholder }}"
+  class="atom-textarea-input
+    {% if disabled %}atom-textarea-input-disabled{% endif %}"
+  {% if required %}required{% endif %}
+  {% if disabled %}disabled{% endif %}>
+  {{ value }}
+</textarea>

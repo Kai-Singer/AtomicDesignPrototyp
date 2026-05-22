@@ -1,0 +1,8 @@
+.atom-label {
+  display: inline-block;
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-small);
+  color: var(--color-font-secondary);
+  user-select: none;
+}

@@ -1,0 +1,9 @@
+{% load atoms %}
+
+{% if messages %}
+  <div class="organism-message-container">
+    {% for message in messages %}
+      {% atomMessage text=message type=message.tags %}
+    {% endfor %}
+  </div>
+{% endif %}

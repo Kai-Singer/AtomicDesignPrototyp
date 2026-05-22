@@ -1,0 +1,12 @@
+<input
+  name="{{ name }}"
+  id="{{ id }}"
+  value="{{ value }}"
+  placeholder="{{ placeholder }}"
+  class="atom-text-input
+    {% if disabled %}atom-text-input-disabled{% endif %}
+    {% if inverse %}atom-text-input-inverse{% endif %}"
+  {% if required %}required{% endif %}
+  {% if disabled %}disabled{% endif %}
+  type="{{ type }}"
+/>

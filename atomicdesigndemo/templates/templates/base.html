@@ -1,0 +1,18 @@
+{% load organisms %}
+{% load static %}
+
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'css/main.css' %}?v=2">
+  <link rel="icon" type="image/png" href="/static/imgs/icons/favicon.png">
+  <script src="{% static 'js/main.js' %}?v=2" defer></script>
+  {% block page_title %}{% endblock %}
+</head>
+<body>
+  {% organismNavigationWithSearch items=navbar_items %}
+  <div class="content">
+    {% block content %}{% endblock %}
+  </div>
+  {% organismMessageContainer messages=messages %}
+</body>
+</html>

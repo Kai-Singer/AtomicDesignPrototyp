@@ -1,0 +1,46 @@
+.atom-upload-input {
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-small);
+  color: var(--color-font);
+}
+
+.atom-upload-input::file-selector-button {
+  all: unset;
+  user-select: none;
+  display: block;
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-normal);
+  padding: var(--spacing-button);
+  border-radius: var(--border-radius-normal);
+  border: var(--border-width) solid;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-font-inverse);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.atom-upload-input::file-selector-button:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.atom-upload-input:focus {
+  border-color:var(--color-highlight);
+}
+
+.atom-upload-input.atom-upload-input-disabled {
+  color: var(--color-font-disabled);
+  cursor: not-allowed;
+}
+
+.atom-upload-input.atom-upload-input-disabled::file-selector-button {
+  background-color: var(--color-disabled);
+  border-color: var(--color-disabled);
+  cursor: not-allowed;
+}

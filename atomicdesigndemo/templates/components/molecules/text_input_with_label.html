@@ -1,0 +1,11 @@
+{% load atoms %}
+
+<div class="molecule-text-input-with-label">
+  {% atomTextInput name=name value=value type=type placeholder=placeholder required=required disabled=disabled id=id %}
+  <div class="molecule-text-input-with-label-label">
+    {% atomLabel label=label id=id%}
+    {% if required %}
+      {% atomRequiredTag %}
+    {% endif %}
+  </div>
+</div>

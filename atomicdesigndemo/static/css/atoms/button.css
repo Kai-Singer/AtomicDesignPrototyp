@@ -1,0 +1,83 @@
+.atom-button {
+  all: unset;
+  user-select: none;
+  display: block;
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-normal);
+  padding: var(--spacing-button);
+  border-radius: var(--border-radius-normal);
+  border: var(--border-width) solid;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-font-inverse);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.atom-button.atom-button-danger {
+  background-color: var(--color-danger);
+  border-color: var(--color-danger);
+}
+
+.atom-button.atom-button-success {
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+.atom-button.atom-button-secondary {
+  background-color: var(--color-inverse);
+  border-color: var(--color-primary);
+  color: var(--color-font-primary);
+}
+
+.atom-button.atom-button-disabled {
+  background-color: var(--color-disabled);
+  border-color: var(--color-disabled);
+  cursor: not-allowed;
+}
+
+.atom-button:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.atom-button.atom-button-danger:hover {
+  background-color: var(--color-danger-hover);
+  border-color: var(--color-danger-hover);
+}
+
+.atom-button.atom-button-success:hover {
+  background-color: var(--color-success-hover);
+  border-color: var(--color-success-hover);
+}
+
+.atom-button.atom-button-secondary:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  color: var(--color-font-inverse);
+}
+
+.atom-button.atom-button-disabled:hover {
+  background-color: var(--color-disabled);
+  border-color: var(--color-disabled);
+}
+
+.atom-button:focus {
+  border-color:var(--color-highlight);
+}
+
+.atom-button.atom-button-danger:focus {
+  border-color:var(--color-highlight);
+}
+
+.atom-button.atom-button-success:focus {
+  border-color:var(--color-highlight);
+}
+
+.atom-button.atom-button-secondary:focus {
+  border-color:var(--color-highlight);
+}

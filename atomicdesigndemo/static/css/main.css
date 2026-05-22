@@ -1,0 +1,62 @@
+/* Protons Import */
+@import url("./protons.css");
+
+/* Atoms Import */
+@import url("./atoms/heading.css");
+@import url("./atoms/subheading.css");
+@import url("./atoms/paragraph.css");
+@import url("./atoms/link.css");
+@import url("./atoms/button.css");
+@import url("./atoms/label.css");
+@import url("./atoms/required_tag.css");
+@import url("./atoms/text_input.css");
+@import url("./atoms/textarea_input.css");
+@import url("./atoms/dropdown_input.css");
+@import url("./atoms/radio_input.css");
+@import url("./atoms/checkbox_input.css");
+@import url("./atoms/upload_input.css");
+@import url("./atoms/card_img.css");
+@import url("./atoms/card_tag.css");
+@import url("./atoms/card_title.css");
+@import url("./atoms/navigation_logo.css");
+@import url("./atoms/navigation_item.css");
+@import url("./atoms/message.css");
+
+/* Molecules Import */
+@import url("./molecules/text_input_with_label.css");
+@import url("./molecules/textarea_input_with_label.css");
+@import url("./molecules/dropdown_input_with_label.css");
+@import url("./molecules/radio_input_list.css");
+@import url("./molecules/checkbox_input_list.css");
+@import url("./molecules/upload_input_with_label.css");
+@import url("./molecules/item_card.css");
+@import url("./molecules/search_bar.css");
+
+/* Organisms Import */
+@import url("./organisms/form_heading.css");
+@import url("./organisms/form.css");
+@import url("./organisms/item_card_list.css");
+@import url("./organisms/navigation.css");
+@import url("./organisms/navigation_with_search.css");
+@import url("./organisms/message_container.css");
+
+body {
+  margin: 0;
+}
+
+.content {
+  margin: 20px;
+  margin-top: 30px;
+  background-color: var(--color-bg);
+}
+
+.message-container {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-list-large);
+}

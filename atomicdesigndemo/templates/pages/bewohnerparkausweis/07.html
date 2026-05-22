@@ -1,0 +1,18 @@
+{% extends "templates/form.html" %}
+{% load organisms %}
+
+
+{% block page_title %}
+
+<title>Antrag - Bewohnerparkausweis beantragen</title>
+
+{% endblock %}
+
+
+{% block content %}
+
+{% organismFormHeading text="Antrag - Bewohnerparkausweis beantragen" application_id=application_id last_page="06" %}
+
+{% organismUploadForm name="07" application_id=application_id heading="Hochladen der Nutzungsüberlassungserklärung" description="Bitte laden Sie die Nutzungsüberlassungserklärung hoch!" %}
+
+{% endblock %}

@@ -1,0 +1,10 @@
+.atom-paragraph {
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-font);
+  font-family: var(--font-family-default);
+}
+
+.atom-paragraph-inverse {
+  color: var(--color-font-inverse);
+}

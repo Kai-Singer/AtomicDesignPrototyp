@@ -1,0 +1,41 @@
+.atom-card-tag {
+  padding: 4px;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-default);
+  color: var(--color-font-inverse);
+  border-radius: var(--border-radius-inner);
+  width: fit-content;
+}
+
+.atom-card-tag-gray {
+  background-color: var(--color-gray);
+}
+
+.atom-card-tag-blue {
+  background-color: var(--color-blue);
+}
+
+.atom-card-tag-green {
+  background-color: var(--color-green);
+}
+
+.atom-card-tag-yellow {
+  background-color: var(--color-yellow);
+}
+
+.atom-card-tag-red {
+  background-color: var(--color-red);
+}
+
+.atom-card-tag-purple {
+  background-color: var(--color-purple);
+}
+
+.atom-card-tag-orange {
+  background-color: var(--color-orange);
+}
+
+.atom-card-tag-teal {
+  background-color: var(--color-teal);
+}

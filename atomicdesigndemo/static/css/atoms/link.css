@@ -1,0 +1,37 @@
+.atom-link {
+  all: unset;
+  cursor: pointer;
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-normal);
+  color: var(--color-font-primary);
+  user-select: none;
+  border-bottom: var(--border-width) solid;
+  border-color: var(--color-secondary);
+  padding-bottom: 4px;
+  transition:
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.atom-link:hover {
+  color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.atom-link:focus {
+  border-color: var(--color-highlight);
+}
+
+.atom-link.atom-link-disabled {
+  color: var(--color-font-disabled);
+  border-color: var(--color-disabled);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.atom-link-img {
+  width: 20px;
+  height: 20px;
+  vertical-align: text-bottom;
+}

@@ -1,0 +1,13 @@
+<label class="atom-checkbox-input-container" for="{{ id }}">
+  <input
+    class="atom-checkbox-input" 
+    type="checkbox"
+    name="{{ name }}"
+    id="{{ id }}"
+    value="{{ value }}"
+    {% if required %}required{% endif %}
+    {% if checked %}checked{% endif %}
+  />
+  <span class="atom-checkbox-input-box"></span>
+  {{ label }}
+</label>

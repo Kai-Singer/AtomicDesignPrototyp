@@ -1,0 +1,10 @@
+.atom-card-title {
+  font-size: var(--font-size-card-title);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-default);
+  color: var(--color-font-inverse);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

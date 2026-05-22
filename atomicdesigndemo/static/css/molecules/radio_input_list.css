@@ -1,0 +1,15 @@
+.molecule-radio-input-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-list);
+}
+
+.molecule-radio-input-list-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.molecule-radio-input-list-label {
+  margin-right: var(--spacing-list);
+}

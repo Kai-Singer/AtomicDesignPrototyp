@@ -1,0 +1,18 @@
+{% extends "templates/form.html" %}
+{% load organisms %}
+
+
+{% block page_title %}
+
+<title>Antrag - Ehrenamtskarte beantragen</title>
+
+{% endblock %}
+
+
+{% block content %}
+
+{% organismFormHeading text="Antrag - Ehrenamtskarte beantragen" application_id=application_id last_page="07" %}
+
+{% organismSubmitForm name="submit" application_id=application_id heading="Antrag abschließen" description="Bitte stimmen Sie zu und schließen Sie Ihren Antrag ab!" %}
+
+{% endblock %}

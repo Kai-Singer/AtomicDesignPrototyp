@@ -1,0 +1,6 @@
+.organism-item-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  direction: row;
+  gap: var(--spacing-card);
+}
